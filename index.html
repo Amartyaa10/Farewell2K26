@@ -5,134 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AISV6 Farewell 2026</title>
     <style>
-        body{
-            margin:0;
-            background:#0B132B;
-            color:#FFD700;
-            font-family:'Georgia', serif;
-            min-height:100vh;
-            text-align:center;
-            padding:20px 20px 60px;
+        body{margin:0;background:#0B132B;color:#FFD700;font-family:'Georgia',serif;min-height:100vh;text-align:center;padding-top:90px}
+        nav{position:fixed;top:0;left:0;width:100%;background:#0B132BEE;padding:14px 0;border-bottom:3px solid #FFD700;backdrop-filter:blur(10px);z-index:1000;box-shadow:0 4px 20px rgba(255,215,0,0.2)}
+        .nav-container{max-width:1100px;margin:0 auto;display:flex;justify-content:center;flex-wrap:wrap;gap:32px}
+        nav a{color:#FFD700;text-decoration:none;font-weight:bold;font-size:1.05em;padding:8px 18px;border-radius:20px;transition:0.35s}
         }
-
-        /* NEW PREMIUM NAVIGATION BAR */
-        .navbar{
-            position:fixed;
-            top:20px;
-            left:50%;
-            transform:translateX(-50%);
-            background:linear-gradient(145deg, #0f1a3a, #0B132B);
-            padding:18px 50px;
-            border:5px solid #FFD700;
-            border-radius:70px;
-            box-shadow:
-                0 0 50px rgba(255,215,0,0.7),
-                inset 0 0 25px rgba(255,215,0,0.15);
-            backdrop-filter:blur(15px);
-            z-index:1000;
-            display:flex;
-            flex-wrap:wrap;
-            justify-content:center;
-            gap:28px;
-            max-width:96%;
-        }
-
-        .navbar a{
-            color:#FFD700;
-            text-decoration:none;
-            font-weight:bold;
-            font-size:1.25em;
-            padding:14px 28px;
-            border-radius:50px;
-            transition:all 0.4s ease;
-            text-shadow:0 0 20px #FFD700;
-        }
-
-        .navbar a:hover{
-            background:#FFD700;
-            color:#0B132B;
-            transform:scale(1.15);
-            box-shadow:0 0 40px #FFD700;
-        }
-
-        /* Mobile perfection */
-        @media (max-width:920px){
-            .navbar{gap:18px; padding:16px 30px;}
-            .navbar a{font-size:1.1em; padding:12px 22px;}
-        }
-        @media (max-width:640px){
-            .navbar{gap:12px; padding:14px 20px; top:10px;}
-            .navbar a{font-size:1em; padding:10px 18px;}
-        }
-
-        .container{
-            max-width:900px;
-            margin:0 auto;
-            padding-top:180px;
-        }
-
-        h1{
-            font-size:4.2em;
-            margin:40px 0 70px;
-            text-shadow:0 0 50px #FFD700;
-            animation:glow 2s infinite alternate;
-        }
-
-        .text{
-            font-size:1.4em;
-            line-height:1.9;
-            max-width:800px;
-            margin:35px auto;
-        }
-
-        .highlight{
-            font-style:italic;
-            font-size:1.6em;
-            color:#FFEA9F;
-            margin:50px auto;
-        }
-
-        @keyframes glow{
-            from {text-shadow:0 0 40px #FFD700;}
-            to {text-shadow:0 0 90px #FFD700, 0 0 140px #1E3A8A;}
-        }
+        nav a:hover{background:#FFD700;color:#0B132B}
+        h1{font-size:4.5em;margin:60px 0 50px;text-shadow:0 0 50px #FFD700;animation:g 2s infinite alternate}
+        .text{font-size:1.4em;line-height:1.9;max-width:850px;margin:35px auto}
+        .highlight{font-style:italic;font-size:1.6em;color:#FFEA9F}
+        @media(max-width:768px){.nav-container{gap:18px} nav a{font-size:0.98em;padding:7px 15px} h1{font-size:3.2em}}
+        @keyframes g{from{text-shadow:0 0 40px #FFD700}to{text-shadow:0 0 90px #FFD700}}
     </style>
 </head>
 <body>
-
-    <!-- NEW PREMIUM NAV -->
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="venue.html">Venue & Dresscode</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="sash.html">Sash Titles</a>
-        <a href="payment.html">Payment</a>
-        <a href="socials.html">Socials</a>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="venue.html">Venue & Dresscode</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="sash.html">Sash Titles</a>
+            <a href="payment.html">Payment</a>
+            <a href="socials.html">Socials</a>
+        </div>
     </nav>
 
-    <div class="container">
-        <h1>AISV6 FAREWELL 2K26</h1>
-
-        <h2 style="font-size:2.8em; margin:70px 0 50px;">The Last Dance</h2>
-
-        <p class="text">
-            A night to celebrate, laugh a little louder, and make memories that’ll stick around long after school ends.
-        </p>
-
-        <p class="text highlight">
-            The Last Dance is our Class XII farewell — where seniors enjoy their final moments, juniors join in the fun,<br>
-            and everyone comes together on one dance floor.
-        </p>
-
-        <p class="text">
-            Expect great music, fun performances, lots of pictures, and vibes you don’t want to miss.<br>
-            It’s not just a goodbye — it’s a celebration of everything we shared.
-        </p>
-
-        <p class="text" style="font-size:2em; margin-top:80px;">
-            Let’s make it a night worth remembering
-        </p>
-    </div>
-
+    <h1>AISV6 FAREWELL 2K26</h1>
+    <h2 style="font-size:2.8em;margin:50px 0 40px">The Last Dance</h2>
+    <p class="text">A night to celebrate, laugh a little louder, and make memories that’ll stick around long after school ends.</p>
+    <p class="text highlight">The Last Dance is our Class XII farewell — where seniors enjoy their final moments, juniors join in the fun,<br>and everyone comes together on one dance floor.</p>
+    <p class="text">Expect great music, fun performances, lots of pictures, and vibes you don’t want to miss.<br>It’s not just a goodbye — it’s a celebration of everything we shared.</p>
+    <p class="text" style="font-size:2em;margin-top:80px">Let’s make it a night worth remembering</p>
 </body>
 </html>
