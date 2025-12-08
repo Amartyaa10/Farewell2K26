@@ -12,17 +12,17 @@
     nav a:hover{background:#FFD700;color:#0B132B}
     h1{font-size:4.5em;margin:60px 0 30px;text-shadow:0 0 50px #FFD700;animation:g 2s infinite alternate}
     .dress-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;margin:70px auto;max-width:900px}
-    .dress-card{background:#0f1a3a;padding:45px 20px;border-radius:25px;border:3px solid #FFD700;box-shadow:0 0 40px rgba(255,215,0,0.4)}
+    .dress-card{background:#0f1a3a;padding:45px 20px;border-radius:25px;border:3px solid #FFD700;box-shadow:0 0 0 40px rgba(255,215,0,0.4)}
     .dress-card h3{font-size:2.2em;margin-bottom:18px;color:#FFEA80}
     .dress-card p{font-size:2em;font-weight:bold}
-    .venue-images{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:30px;margin:80px auto;max-width:1400px;padding:0 15px}
+    .venue-images{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:30px;margin:80px auto;max-width:1500px;padding:0 15px}
     .img-box{aspect-ratio:16/10;border:5px solid #FFD700;border-radius:25px;overflow:hidden;box-shadow:0 0 60px rgba(255,215,0,0.6);cursor:pointer;transition:.4s}
     .img-box:hover{transform:scale(1.06);box-shadow:0 0 100px #FFD700}
     .img-box img{width:100%;height:100%;object-fit:cover;display:block}
     #lightbox{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.97);display:none;justify-content:center;align-items:center;z-index:9999;padding:20px;box-sizing:border-box}
     #lightbox img{max-width:96vw;max-height:96vh;border:8px solid #FFD700;border-radius:25px;box-shadow:0 0 120px #FFD700;object-fit:contain}
     #lightbox span{position:absolute;top:20px;right:35px;font-size:60px;color:#FFD700;cursor:pointer;font-weight:bold}
-    @media(max-width:768px){h1{font-size:3.4em}#lightbox img{max-width:98vw;max-height:90vh}#lightbox span{top:10px;right:25px;font-size:50px}}
+    @media(max-width:768px){h1{font-size:3.4em}#lightbox img{max-width:98vw;max-height:90vh}}
     @keyframes g{from{text-shadow:0 0 40px #FFD700}to{text-shadow:0 0 90px #FFD700}}
 </style>
 </head>
@@ -58,9 +58,11 @@
     <div class="img-box" onclick="openLightbox(this)"><img src="https://iili.io/fAlIaRe.jpg" alt="Venue"></div>
     <div class="img-box" onclick="openLightbox(this)"><img src="https://iili.io/fAlIYJ9.jpg" alt="Venue"></div>
     <div class="img-box" onclick="openLightbox(this)"><img src="https://iili.io/fAlIlDb.jpg" alt="Venue"></div>
+    <!-- YOUR NEW 6TH IMAGE -->
+    <div class="img-box" onclick="openLightbox(this)"><img src="https://iili.io/fA0MNAG.jpg" alt="Venue"></div>
 </div>
 
-<p style="font-size:1.9em;margin:80px 0 40px">Venue: KBC Banquet • Date & Time coming soon</p>
+<p style="font-size:1.9em;margin:margin-top:80px">Venue: KBC Banquet • Date & Time coming soon</p>
 
 <!-- FULL-SCREEN LIGHTBOX -->
 <div id="lightbox" onclick="this.style.display='none'">
