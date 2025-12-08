@@ -12,25 +12,15 @@
         nav a:hover{background:#FFD700;color:#0B132B}
         h1{font-size:4.5em;margin:60px 0 30px;text-shadow:0 0 50px #FFD700;animation:g 2s infinite alternate}
         .section{margin:60px auto;max-width:1100px;padding:0 20px}
-
-        /* Dresscode */
         .dress-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;margin:70px auto;max-width:900px}
         .dress-card{background:#0f1a3a;padding:45px 20px;border-radius:25px;border:3px solid #FFD700;box-shadow:0 0 40px rgba(255,215,0,0.4)}
         .dress-card h3{font-size:2.2em;margin-bottom:18px;color:#FFEA80}
         .dress-card p{font-size:2em;font-weight:bold}
-
-        /* Photos */
         .venue-images{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:30px;margin:80px auto;max-width:1300px;padding:0 15px}
         .img-box{aspect-ratio:16/10;border:4px solid #FFD700;border-radius:25px;overflow:hidden;box-shadow:0 0 50px rgba(255,215,0,0.5);transition:0.4s}
         .img-box:hover{transform:scale(1.04)}
         .img-box img{width:100%;height:100%;object-fit:cover;display:block}
-
-        @media(max-width:768px){
-            h1{font-size:3.4em}
-            .dress-grid{grid-template-columns:1fr}
-            .dress-card h3{font-size:1.9em}
-            .dress-card p{font-size:1.7em}
-        }
+        @media(max-width:768px){h1{font-size:3.4em}.dress-grid{grid-template-columns:1fr}}
         @keyframes g{from{text-shadow:0 0 40px #FFD700}to{text-shadow:0 0 90px #FFD700}}
     </style>
 </head>
@@ -59,29 +49,24 @@
         </div>
     </div>
 
-    <!-- Venue Photos -->
+    <!-- YOUR 4 PHOTOS WITH EXACT NAMES -->
     <div class="section">
         <h2 style="font-size:2.9em;color:#FFEA80;margin-bottom:60px">Sneak Peek of the Venue</h2>
         <div class="venue-images">
             <div class="img-box">
-                <img src="https://i.imgur.com/0z7k5rM.jpeg" alt="Entrance">
+                <img src="images/farewell1.jpg.jpeg" alt="Venue">
             </div>
             <div class="img-box">
-                <img src="https://i.imgur.com/5e8p9vL.jpeg" alt="KBC Building">
+                <img src="images/farewell2.jpg.jpeg" alt="Venue">
             </div>
             <div class="img-box">
-                <img src="https://i.imgur.com/3fG9kLm.jpeg" alt="Interior">
+                <img src="images/farewell3.jpg.jpeg" alt="Venue">
             </div>
             <div class="img-box">
-                <img src="https://i.imgur.com/7jH2pQx.jpeg" alt="Exterior">
+                <img src="images/farewell4.jpg.jpeg" alt="Venue">
             </div>
         </div>
-
-        <p style="font-size:1.8em;margin-top:80px;color:#FFD700">
-            Venue: KBC Banquet<br>
-            Date & Time: Coming Soon
-        </p>
+        <p style="font-size:1.9em;margin-top:80px">Venue: KBC Banquet • Date & Time coming soon</p>
     </div>
-
 </body>
 </html>
