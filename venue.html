@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>title>Venue & Dresscode - AISV6 Farewell 2026</title>
+<title>Venue & Dresscode - AISV6 Farewell 2026</title>
 <style>
     body{margin:0;background:#0B132B;color:#FFD700;font-family:Georgia,serif;min-height:100vh;text-align:center;padding-top:90px;overflow-x:hidden}
     nav{position:fixed;top:0;left:0;width:100%;background:#0B132BEE;padding:14px 0;border-bottom:3px solid #FFD700;backdrop-filter:blur(10px);z-index:1000;box-shadow:0 4px 20px rgba(255,215,0,0.2)}
@@ -11,43 +11,42 @@
     nav a{color:#FFD700;text-decoration:none;font-weight:bold;font-size:1.05em;padding:8px 18px;border-radius:20px;transition:.35s}
     nav a:hover{background:#FFD700;color:#0B132B}
     h1{font-size:4.5em;margin:60px 0 30px;text-shadow:0 0 50px #FFD700;animation:g 2s infinite alternate}
-    .dress-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;margin:70px auto;max-width:900px}
+    
+    /* DRESS CODE */
+    .dress-grid{display:grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;margin:70px auto;max-width:900px}
     .dress-card{background:#0f1a3a;padding:45px 20px;border-radius:25px;border:3px solid #FFD700;box-shadow:0 0 40px rgba(255,215,0,0.4)}
     .dress-card h3{font-size:2.2em;margin-bottom:18px;color:#FFEA80}
     .dress-card p{font-size:2em;font-weight:bold}
 
-    /* 3 TOP — 3 BOTTOM LAYOUT
-    .venue-images{
+    /* 3 + 3 SMALL IMAGES — EXACTLY LIKE YOUR SKETCH */
+    .venue-gallery{
         display:grid;
-        grid-template-columns:repeat(3,1fr);
-        gap:35px;
+        grid-template-columns:repeat(3, 320px);
+        gap:40px;
+        justify-content:center;
         margin:100px auto;
-        max-width:1400px;
-        padding:0 30px;
+        max-width:1200px;
     }
     .img-box{
+        width:320px;
+        height:200px;
         border:6px solid #FFD700;
         border-radius:28px;
         overflow:hidden;
-        box-shadow:0 0 70px rgba(255,215,0,0.7);
+        box-shadow:0 0 80px rgba(255,215,0,0.7);
         cursor:pointer;
         transition:.4s;
     }
-    .img-box:hover{transform:scale(1.07);box-shadow:0 0 110px #FFD700}
-    .img-box img{width:100%;height:100%;object-fit:cover;display:block}
+    .img-box:hover{transform:scale(1.08);box-shadow:0 0 120px #FFD700}
+    .img-box img{width:100%;height:100%;object-fit:cover}
 
-    /* FULL-SCREEN LIGHTBOX */
-    #lightbox{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.97);display:none;justify-content:center;align-items:center;z-index:9999;padding:20px;box-sizing:border-box}
-    #lightbox img{max-width:96vw;max-height:96vh;border:10px solid #FFD700;border-radius:30px;box-shadow:0 0 140px #FFD700;object-fit:contain}
+    /* FULL-SCREEN POPUP */
+    #lightbox{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.97);display:none;justify-content:center;align-items:center;z-index:9999}
+    #lightbox img{max-width:95vw;max-height:95vh;border:10px solid #FFD700;border-radius:30px;box-shadow:0 0 150px #FFD700}
     #lightbox span{position:absolute;top:20px;right:40px;font-size:70px;color:#FFD700;cursor:pointer}
 
-    @media(max-width:1024px){
-        .venue-images{grid-template-columns:repeat(2,1fr);gap:25px}
-    }
-    @media(max-width:640px){
-        .venue-images{grid-template-columns:1fr}
-        h1{font-size:3.4em}
-    }
+    @media(max-width:1100px){.venue-gallery{grid-template-columns:repeat(2,320px)}}
+    @media(max-width:768px){.venue-gallery{grid-template-columns:320px}h1{font-size:3.4em}}
     @keyframes g{from{text-shadow:0 0 40px #FFD700}to{text-shadow:0 0 90px #FFD700}}
 </style>
 </head>
@@ -78,13 +77,12 @@
 
 <h2 style="font-size:3em;color:#FFEA80;margin:100px 0 70px">Sneak Peek of the Venue</h2>
 
-<div class="venue-images">
-    <!-- ROW 1 — 3 images -->
+<!-- EXACT 3 + 3 LAYOUT YOU WANTED -->
+<div class="venue-gallery">
     <div class="img-box" onclick="openLightbox(this)"><img src="https://iili.io/fAlIcOu.jpg"></div>
     <div class="img-box" onclick="openLightbox(this)"><img src="https://iili.io/fAlI1xj.jpg"></div>
     <div class="img-box" onclick="openLightbox(this)"><img src="https://iili.io/fAlIaRe.jpg"></div>
-    
-    <!-- ROW 2 — 3 images -->
+
     <div class="img-box" onclick="openLightbox(this)"><img src="https://iili.io/fAlIYJ9.jpg"></div>
     <div class="img-box" onclick="openLightbox(this)"><img src="https://iili.io/fAlIlDb.jpg"></div>
     <div class="img-box" onclick="openLightbox(this)"><img src="https://iili.io/fA0MNAG.jpg"></div>
